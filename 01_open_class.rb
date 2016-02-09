@@ -2,10 +2,11 @@
 
 string = "Hello I'm a string!"
 
+puts "Does string have a :hello! method?"
 begin
   puts string.hello!
 rescue => e
-  puts "Onoz, no hello!"
+  puts 'Onoz, no hello!'
 end
 
 class String
@@ -14,4 +15,5 @@ class String
   end
 end
 
+puts "What about now?"
 puts string.hello!
